@@ -1,101 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mock AI Interview Platform</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      margin: 0;
-      padding: 40px;
-      color: #333;
-      line-height: 1.6;
-    }
 
-    h1, h2 {
-      color: #2c3e50;
-    }
-
-    h1 {
-      border-bottom: 2px solid #4CAF50;
-      padding-bottom: 10px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .section {
-      margin-bottom: 30px;
-    }
-
-    code {
-      background-color: #eee;
-      padding: 2px 5px;
-      border-radius: 4px;
-      font-family: monospace;
-    }
-
-    .highlight {
-      background-color: #e8f5e9;
-      border-left: 4px solid #4CAF50;
-      padding: 10px;
-      margin: 20px 0;
-    }
-  </style>
-</head>
-<body>
 
   <h1>Mock AI Interview Platform</h1>
 
-  <div class="section">
-    <p>This is a simple implementation of a mock interview web application built using <strong>ReactJS</strong>, <strong>Node.js</strong>, <strong>Express</strong>, <strong>MongoDB</strong>, and the <strong>Groq API</strong>. The platform simulates real interview experiences by generating questions, evaluating user responses, and providing immediate feedback along with correct solutions.</p>
-  </div>
+  <p>This web-based application simulates real interview environments using AI technologies. It offers real-time evaluation of audio/video responses, personalized feedback, and secure user management.</p>
+  
+  <h2>Features</h2>
+  <ul>
+    <li>
+      <strong> AI-Powered Interview Simulation:</strong>
+      Conduct mock interviews with dynamically generated questions and real-time audio/video recording.
+    </li>
+    <li>
+      <strong>Intelligent Question Generation: </strong>
+      Uses Groq LLM API to generate questions based on difficulty and topic.
+    </li>
+    <li>
+      <strong>Audio & Video Response Capture: </strong>
+      Captures user responses through webcam and microphone using WebRTC and MediaRecorder APIs.
+    </li>
+    <li>
+      <strong>Speech-to-Text Conversion:  </strong>
+      Utilizes Whisper model to transcribe audio responses for AI processing.
+    </li>
+    <li>
+      <strong>💬 AI-Based Evaluation:</strong>
+      Analyzes user answers for:
+      <ul>
+        <li>Grammar & Clarity (via Groq LLM)</li>
+        <li>Correctness of answers (via Groq LLM)</li>
+        <li>Confidence level (tone and speech features)</li>
+        <li>Emotion detection (using Google MediaPipe)</li>
+      </ul>
+    </li>
+    <li>
+      <strong>📊 Instant Feedback & Scoring:</strong>
+      Users receive:
+      <ul>
+        <li>Overall performance score</li>
+        <li>Detailed analysis of strengths and weaknesses</li>
+        <li>Suggestions for improvement</li>
+      </ul>
+    </li>
+    <li>
+      <strong>🛡️ Secure Authentication:</strong>
+      Login/signup functionality with JWT-based user sessions.
+    </li>
+    <li>
+      <strong>🧾 Interview History Tracking:</strong>
+      Stores and displays past interviews with questions, responses, and scores.
+    </li>
+  </ul>
+</section>
 
-  <div class="section">
-    <h2>Getting Started</h2>
-    <p>To use the platform, clone the repository and run the frontend and backend servers. You will be guided through an interactive interview session where you can attempt questions and receive real-time feedback powered by the Groq API.</p>
-  </div>
+  <h2>User Interaction Flow</h2>
+  <ul>
+    <li><strong>Sign Up:</strong>  New users create an account.</li>
+    <li><strong>Login:</strong> Registered users log in with credentials.</li>
+    <li><strong>New Interview:</strong> Users start an interview session.</li>
+    <li><strong>Question Generation:</strong> Questions are dynamically generated using Groq API.</li>
+    <li><strong>Response Collection:</strong> Users respond via audio and video.</li>
+    <li><strong>Audio & Video Capture:</strong> Implemented using WebRTC and MediaRecorder APIs.</li>
+    <li><strong>AI Analysis:</strong> Responses are analyzed on multiple criteria.</li>
+    <li><strong>Feedback:</strong> Users receive scores and suggestions for improvement.</li>
+  </ul>
 
-  <div class="section">
-    <h2>How It Works</h2>
-    <ul>
-      <li><strong>Question Generation:</strong> Interview questions are dynamically generated using the Groq API.</li>
-      <li><strong>Answer Evaluation:</strong> User answers are evaluated, and instant feedback is returned.</li>
-      <li><strong>Past Attempts:</strong> Users can review previous attempts with detailed solutions and explanations.</li>
-      <li><strong>UI:</strong> Clean and user-friendly interface for a seamless experience.</li>
-      <li><strong>Security:</strong> User data is securely stored and handled.</li>
-    </ul>
-  </div>
 
-  <div class="section">
-    <h2>Features</h2>
-    <ul>
-      <li>Auto-generated technical and HR interview questions</li>
-      <li>Real-time evaluation with feedback</li>
-      <li>History of past interview attempts</li>
-      <li>Secure authentication and data storage</li>
-      <li>Responsive, minimal user interface</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Built With</h2>
-    <ul>
-      <li>ReactJS</li>
-      <li>Node.js</li>
-      <li>Express</li>
-      <li>MongoDB</li>
-      <li>Groq API</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Acknowledgements</h2>
-    <p>This project was inspired by the need for efficient and realistic interview preparation tools. Thanks to the Groq team for their powerful AI API and to all the open-source communities that helped make this possible.</p>
-  </div>
+  <h2>Technology Stack</h2>
+  <ul>
+    <li><strong>Frontend:</strong> React.js</li>
+    <li><strong>Backend:</strong> Node.js, Express.js</li>
+    <li><strong>Database:</strong> MongoDB</li>
+    <li><strong>Speech-to-Text:</strong> Whisper</li>
+    <li><strong>Text Analysis:</strong> Groq API (LLM-based)</li>
+    <li><strong>Facial Analysis:</strong> Google MediaPipe</li>
+    <li><strong>Authentication:</strong> JWT (JSON Web Tokens)</li>
+  </ul>
 
 </body>
 </html>
