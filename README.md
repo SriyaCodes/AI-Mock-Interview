@@ -43,7 +43,7 @@
       Utilizes Whisper model to transcribe audio responses for AI processing.
     </li>
     <li>
-      <strong>💬 AI-Based Evaluation:</strong>
+      <strong> AI-Based Evaluation:</strong>
       Analyzes user answers for:
       <ul>
         <li>Grammar & Clarity (via Groq LLM)</li>
@@ -53,7 +53,7 @@
       </ul>
     </li>
     <li>
-      <strong>📊 Instant Feedback & Scoring:</strong>
+      <strong> Instant Feedback & Scoring:</strong>
       Users receive:
       <ul>
         <li>Overall performance score</li>
@@ -62,11 +62,11 @@
       </ul>
     </li>
     <li>
-      <strong>🛡️ Secure Authentication:</strong>
+      <strong>Secure Authentication:</strong>
       Login/signup functionality with JWT-based user sessions.
     </li>
     <li>
-      <strong>🧾 Interview History Tracking:</strong>
+      <strong> Interview History Tracking:</strong>
       Stores and displays past interviews with questions, responses, and scores.
     </li>
   </ul>
