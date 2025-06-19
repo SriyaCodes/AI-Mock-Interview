@@ -1,80 +1,70 @@
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-  <h1>Mock AI Interview Platform</h1>
+## Available Scripts
 
-  <p>This web-based application simulates real interview environments using AI technologies. It offers real-time evaluation of audio/video responses, personalized feedback, and secure user management.</p>
-    <h2>Technology Stack</h2>
-  <ul>
-    <li><strong>Frontend:</strong> React.js</li>
-    <li><strong>Backend:</strong> Node.js, Express.js</li>
-    <li><strong>Database:</strong> MongoDB</li>
-    <li><strong>Speech-to-Text:</strong> Whisper</li>
-    <li><strong>Text Analysis:</strong> Groq API (LLM-based)</li>
-    <li><strong>Facial Analysis:</strong> Google MediaPipe</li>
-    <li><strong>Authentication:</strong> JWT (JSON Web Tokens)</li>
-  </ul>
-<h2>User Interaction Flow</h2>
-  <ul>
-    <li><strong>Sign Up:</strong>  New users create an account.</li>
-    <li><strong>Login:</strong> Registered users log in with credentials.</li>
-    <li><strong>New Interview:</strong> Users start an interview session.</li>
-    <li><strong>Question Generation:</strong> Questions are dynamically generated using Groq API.</li>
-    <li><strong>Response Collection:</strong> Users respond via audio and video.</li>
-    <li><strong>Audio & Video Capture:</strong> Implemented using WebRTC and MediaRecorder APIs.</li>
-    <li><strong>AI Analysis:</strong> Responses are analyzed on multiple criteria.</li>
-    <li><strong>Feedback:</strong> Users receive scores and suggestions for improvement.</li>
-  </ul>
-  <h2>Features</h2>
-  <ul>
-    <li>
-      <strong> AI-Powered Interview Simulation:</strong>
-      Conduct mock interviews with dynamically generated questions and real-time audio/video recording.
-    </li>
-    <li>
-      <strong>Intelligent Question Generation: </strong>
-      Uses Groq LLM API to generate questions based on difficulty and topic.
-    </li>
-    <li>
-      <strong>Audio & Video Response Capture: </strong>
-      Captures user responses through webcam and microphone using WebRTC and MediaRecorder APIs.
-    </li>
-    <li>
-      <strong>Speech-to-Text Conversion:  </strong>
-      Utilizes Whisper model to transcribe audio responses for AI processing.
-    </li>
-    <li>
-      <strong> AI-Based Evaluation:</strong>
-      Analyzes user answers for:
-      <ul>
-        <li>Grammar & Clarity (via Groq LLM)</li>
-        <li>Correctness of answers (via Groq LLM)</li>
-        <li>Confidence level (tone and speech features)</li>
-        <li>Emotion detection (using Google MediaPipe)</li>
-      </ul>
-    </li>
-    <li>
-      <strong> Instant Feedback & Scoring:</strong>
-      Users receive:
-      <ul>
-        <li>Overall performance score</li>
-        <li>Detailed analysis of strengths and weaknesses</li>
-        <li>Suggestions for improvement</li>
-      </ul>
-    </li>
-    <li>
-      <strong>Secure Authentication:</strong>
-      Login/signup functionality with JWT-based user sessions.
-    </li>
-    <li>
-      <strong> Interview History Tracking:</strong>
-      Stores and displays past interviews with questions, responses, and scores.
-    </li>
-  </ul>
-</section>
+In the project directory, you can run:
 
-  
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-</body>
-</html>
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
